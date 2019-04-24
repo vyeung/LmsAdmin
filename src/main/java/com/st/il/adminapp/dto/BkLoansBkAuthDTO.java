@@ -1,8 +1,8 @@
-package com.st.lms.dto;
+package com.st.il.adminapp.dto;
 
-import com.st.lms.models.Author;
-import com.st.lms.models.Book;
-import com.st.lms.models.BookLoans;
+import com.st.il.adminapp.models.Author;
+import com.st.il.adminapp.models.Book;
+import com.st.il.adminapp.models.BookLoans;
 
 public class BkLoansBkAuthDTO {
 

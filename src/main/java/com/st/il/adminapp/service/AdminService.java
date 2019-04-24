@@ -1,4 +1,4 @@
-package com.st.lms.service;
+package com.st.il.adminapp.service;
 
 import java.sql.Date;
 import java.util.ArrayList;
@@ -8,19 +8,19 @@ import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.st.lms.dao.AuthorDao;
-import com.st.lms.dao.BookDao;
-import com.st.lms.dao.BookLoansDao;
-import com.st.lms.dao.BorrowerDao;
-import com.st.lms.dao.LibBranchDao;
-import com.st.lms.dao.PublisherDao;
-import com.st.lms.dto.BkAuthPubDTO;
-import com.st.lms.models.Author;
-import com.st.lms.models.Book;
-import com.st.lms.models.BookLoans;
-import com.st.lms.models.Borrower;
-import com.st.lms.models.LibraryBranch;
-import com.st.lms.models.Publisher;
+import com.st.il.adminapp.dao.AuthorDao;
+import com.st.il.adminapp.dao.BookDao;
+import com.st.il.adminapp.dao.BookLoansDao;
+import com.st.il.adminapp.dao.BorrowerDao;
+import com.st.il.adminapp.dao.LibBranchDao;
+import com.st.il.adminapp.dao.PublisherDao;
+import com.st.il.adminapp.dto.BkAuthPubDTO;
+import com.st.il.adminapp.models.Author;
+import com.st.il.adminapp.models.Book;
+import com.st.il.adminapp.models.BookLoans;
+import com.st.il.adminapp.models.Borrower;
+import com.st.il.adminapp.models.LibraryBranch;
+import com.st.il.adminapp.models.Publisher;
 
 @Service
 public class AdminService {

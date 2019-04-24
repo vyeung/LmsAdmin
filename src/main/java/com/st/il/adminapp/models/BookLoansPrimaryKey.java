@@ -1,4 +1,4 @@
-package com.st.lms.models;
+package com.st.il.adminapp.models;
 
 import java.io.Serializable;
 

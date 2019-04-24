@@ -1,4 +1,4 @@
-package com.st.lms.exception;
+package com.st.il.adminapp.exception;
 
 public class ApiError {
 

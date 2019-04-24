@@ -1,4 +1,4 @@
-package com.st.lms.dto;
+package com.st.il.adminapp.dto;
 
 public class BkAuthPubDTO {
 

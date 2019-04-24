@@ -1,12 +1,12 @@
-package com.st.lms;
+package com.st.il.adminapp;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class LmsApplication {
+public class AdminAppApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(LmsApplication.class, args);
+		SpringApplication.run(AdminAppApplication.class, args);
 	}
 }

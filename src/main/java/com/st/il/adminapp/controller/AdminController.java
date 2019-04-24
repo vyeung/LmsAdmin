@@ -1,4 +1,4 @@
-package com.st.lms.controller;
+package com.st.il.adminapp.controller;
 
 import java.sql.Date;
 import java.util.List;
@@ -15,18 +15,18 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.st.lms.dto.BkAuthPubDTO;
-import com.st.lms.exception.AlreadyExistsException;
-import com.st.lms.exception.BadRequestException;
-import com.st.lms.exception.NotFoundException;
-import com.st.lms.models.Author;
-import com.st.lms.models.Book;
-import com.st.lms.models.BookLoans;
-import com.st.lms.models.Borrower;
-import com.st.lms.models.LibraryBranch;
-import com.st.lms.models.Publisher;
-import com.st.lms.service.AdminService;
-import com.st.lms.utils.DateCalculations;
+import com.st.il.adminapp.dto.BkAuthPubDTO;
+import com.st.il.adminapp.exception.AlreadyExistsException;
+import com.st.il.adminapp.exception.BadRequestException;
+import com.st.il.adminapp.exception.NotFoundException;
+import com.st.il.adminapp.models.Author;
+import com.st.il.adminapp.models.Book;
+import com.st.il.adminapp.models.BookLoans;
+import com.st.il.adminapp.models.Borrower;
+import com.st.il.adminapp.models.LibraryBranch;
+import com.st.il.adminapp.models.Publisher;
+import com.st.il.adminapp.service.AdminService;
+import com.st.il.adminapp.utils.DateCalculations;
 
 @RestController
 @RequestMapping("/admin")
