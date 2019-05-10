@@ -15,6 +15,7 @@ import com.st.il.adminapp.dao.BorrowerDao;
 import com.st.il.adminapp.dao.LibBranchDao;
 import com.st.il.adminapp.dao.PublisherDao;
 import com.st.il.adminapp.dto.BkAuthPubDTO;
+import com.st.il.adminapp.dto.BookLoansDTO;
 import com.st.il.adminapp.models.Author;
 import com.st.il.adminapp.models.Book;
 import com.st.il.adminapp.models.BookLoans;
@@ -333,6 +334,33 @@ public class AdminService {
 		List<BookLoans> bookLoans = null;
 		bookLoans = bookLoansDao.findAll();
 		return bookLoans;
+	}
+	
+	public List<BookLoansDTO> getAllBookLoansAsDTO() {
+		List<BookLoansDTO> list = null;
+		
+		List<BookLoans> bookLoans = bookLoansDao.findAll();
+		Book book;
+		LibraryBranch libBranch;
+		Borrower borrower;
+		Date dateOut;
+		Date dueDate;
+		
+		BookLoansDTO obj;
+		list = new ArrayList<>();
+		
+		for(BookLoans bl: bookLoans) {
+			book = bookDao.findById(bl.getBookId()).get();
+			libBranch = libraryBranchDao.findById(bl.getBranchId()).get();
+			borrower = borrowerDao.findById(bl.getCardNo()).get();
+			dateOut = bl.getDateOut();
+			dueDate = bl.getDueDate();
+			
+			obj = new BookLoansDTO(book, libBranch, borrower, dateOut, dueDate);
+			list.add(obj);
+		}
+	
+		return list;
 	}
 	
 	public void changeDueDate(int bookId, int branchId, int cardNo, Date dateOut, Date dueDate) {
