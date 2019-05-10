@@ -16,6 +16,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.st.il.adminapp.dto.BkAuthPubDTO;
+import com.st.il.adminapp.dto.BookLoansDTO;
 import com.st.il.adminapp.exception.AlreadyExistsException;
 import com.st.il.adminapp.exception.BadRequestException;
 import com.st.il.adminapp.exception.NotFoundException;
@@ -203,6 +204,11 @@ public class AdminController {
 	}
 	
 	/*###################################################################################*/
+	
+	@GetMapping("/bookLoansAsDTO")
+	public List<BookLoansDTO> getAllBookLoansAsDTO() {
+		return adminService.getAllBookLoansAsDTO();
+	}
 	
 	@GetMapping("/bookLoans")
 	public List<BookLoans> getAllBookLoans() {
